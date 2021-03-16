@@ -1,12 +1,16 @@
-import React from 'react';
-import Greeting from './Greeting';
 
-function App() {
-    return (
-        <>
-            <Greeting/>
-        </>
-    );
+function Add(a,b){
+    let add = a+b;
+    return add;
+}
+function Sub(a,b){
+    let sub = a-b;
+    return sub;
+}
+function Mul(a,b){
+    let mul =  a*b;
+    return mul;
 }
 
-export default App;
+//export default Add;
+export {Add,Sub,Mul};
