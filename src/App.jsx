@@ -1,16 +1,12 @@
 import React from 'react';
-import Heading from './Heading';
-import List from './List';
-import Para from './Para';
+import Greeting from './Greeting';
 
-function app() {
+function App() {
     return (
         <>
-            <Heading/>
-            <Para/>
-            <List/>
+            <Greeting/>
         </>
     );
 }
 
-export default app;
+export default App;
