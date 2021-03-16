@@ -1,26 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import './index.css';
-
-let cuDate = new Date();
-let greeting = '';
-const cssStyle = {};
-cuDate = cuDate.getHours();
-if(cuDate >= 1 && cuDate < 12)
-{
-    greeting = "Good Morning";
-    cssStyle.color = 'green';
-}
-else if(cuDate >= 12 && cuDate < 19)
-{
-    greeting = "Good Evening";
-    cssStyle.color = 'cyan';
-}
-else
-{
-    greeting = "Good Night";
-    cssStyle.color = 'orange';
-}
+import App from './App';
 ReactDOM.render(
-  <h2 className="text">Hellow Sir! <span style={cssStyle}>{greeting}</span></h2>,
-  document.getElementById('root'));
+    <App />,
+    document.getElementById('root')
+  );
