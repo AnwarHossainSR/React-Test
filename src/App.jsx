@@ -2,14 +2,16 @@ import React, { useState } from 'react'
 
 
 const App = () => {
-    const [count,setCount] = useState(0);
-    const IncNum = () => {
-        setCount(count+1)
+    const newTime = new Date().toLocaleTimeString()
+    const [time,setTime] = useState(newTime);
+    const CurrentTime = () => {
+        let newUpdateTime = new Date().toLocaleTimeString()
+        setTime(newUpdateTime)
     }
     return (
         <div>
-            <h1>{count}</h1>
-            <button onClick={IncNum}>Click</button>
+            <h1>{time}</h1>
+            <button onClick={CurrentTime}>Click</button>
         </div>
     )
 }
