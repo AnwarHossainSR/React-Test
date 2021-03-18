@@ -1,4 +1,4 @@
-//import react from "react";
+import react from "react";
 import ReactDom from "react-dom";
 import Card from "./component/Card";
 import "./index.css";
@@ -7,6 +7,7 @@ import Sdata from "./component/Sdata";
 function Netflixcard(val) {
   return (
     <Card
+      key={val.id}
       imgsrc={val.imgsrc}
       title={val.title}
       sname={val.sname}
