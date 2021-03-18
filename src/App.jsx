@@ -1,16 +1,17 @@
+import React, { useState } from 'react'
 
-function Add(a,b){
-    let add = a+b;
-    return add;
-}
-function Sub(a,b){
-    let sub = a-b;
-    return sub;
-}
-function Mul(a,b){
-    let mul =  a*b;
-    return mul;
+
+const App = () => {
+    const [count,setCount] = useState(0);
+    const IncNum = () => {
+        setCount(count+1)
+    }
+    return (
+        <div>
+            <h1>{count}</h1>
+            <button onClick={IncNum}>Click</button>
+        </div>
+    )
 }
 
-//export default Add;
-export {Add,Sub,Mul};
+export default App
