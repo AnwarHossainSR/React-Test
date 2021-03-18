@@ -1,14 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom'
-import * as Calculator from './App';
+//import react from "react";
+import ReactDom from "react-dom";
+import Card from "./component/Card";
+import "./index.css";
+import Sdata from "./component/Sdata";
 
-ReactDOM.render(
-  <>
-    <ul>
-        <li>Addition : {Calculator.Add(40,4)}</li>
-        <li>Substraction : {Calculator.Sub(40,4)}</li>
-        <li>Multiplication : {Calculator.Mul(40,4)}</li>
-    </ul>
-  </>,
-  document.getElementById('root')
+function Netflixcard(val) {
+  return (
+    <Card
+      imgsrc={val.imgsrc}
+      title={val.title}
+      sname={val.sname}
+      link={val.link}
+    />
   );
+}
+
+ReactDom.render(
+  <>
+    <h3 className="heading__style">Top Five Netflix Series In 2020</h3>
+    {Sdata.map(Netflixcard)}
+  </>,
+  document.getElementById("root")
+);
