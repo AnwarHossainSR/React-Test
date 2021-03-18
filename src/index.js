@@ -18,7 +18,7 @@ function Netflixcard(val) {
 
 ReactDom.render(
   <>
-    <h3 className="heading__style">Top Five Netflix Series In 2020</h3>
+    <h3 className="heading__style">Top Five Netflix Series In 2020 🥰</h3>
     {Sdata.map(Netflixcard)}
   </>,
   document.getElementById("root")
