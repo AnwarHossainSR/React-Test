@@ -23,3 +23,8 @@ button{
   border-radius: 5px;
   cursor: pointer;
 } */
+
+a.navactive{
+  color: brown;
+  border-bottom: 1px solid darkolivegreen;
+}
